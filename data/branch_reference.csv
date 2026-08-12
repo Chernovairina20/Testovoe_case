@@ -1,0 +1,8 @@
+branch_id,branch_name,channel,region,staff_count,status,target_default_rate,target_avg_credit_score,target_avg_dti,min_credit_score_policy,max_dti_policy,partner_expansion_flag
+B001,Moscow,branch,Moscow,630,active,0.09,623,47.5,525,56,0
+B002,Moscow,online,Moscow,580,active,0.1,622,52.7,512,61,0
+B003,SPb,branch,SPb,420,active,0.1,612,50.4,520,60,0
+B004,SPb,online,SPb,390,active,0.09,616,53.0,507,63,0
+B005,Ural,branch,Ural,310,active,0.09,601,48.8,500,58,0
+B006,Siberia,branch,Siberia,280,active,0.12,594,51.6,496,60,0
+B007,South,partner,South,180,active,0.16,577,54.7,480,65,1
