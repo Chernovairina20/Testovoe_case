@@ -12,8 +12,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-st.set_page_config(page_title="ЦифраФинанс — мониторинг портфеля",
-                   page_icon="📊", layout="wide")
+st.set_page_config(page_title="ЦифраФинанс — мониторинг портфеля", layout="wide")
 
 DATA = os.path.join(os.path.dirname(__file__), "data")
 TARGET_DR = 0.10  # плановый уровень дефолтов
@@ -46,7 +45,7 @@ mask = (df.region.isin(regions) & df.channel.isin(channels) & df.loan_product.is
         & (df.quarter >= qsel[0]) & (df.quarter <= qsel[1]))
 d = df[mask].copy()
 
-st.title("📊 ЦифраФинанс — мониторинг кредитного портфеля")
+st.title("ЦифраФинанс — мониторинг кредитного портфеля")
 st.caption(f"Отобрано кредитов: {len(d):,} из {len(df):,}".replace(",", " "))
 
 if d.empty:
